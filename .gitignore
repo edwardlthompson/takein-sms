@@ -50,3 +50,9 @@ Thumbs.db
 # Temp
 *.tmp
 *.bak
+
+# Ephemeral audit / release drafts
+CODE_REVIEW.md
+RELEASE_NOTES.md
+CURSOR_RADAR_REPORT.md
+CURSOR_RADAR_BACKLOG.md

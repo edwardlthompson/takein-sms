@@ -2,7 +2,9 @@
   "distribution_tier": "foss",
   "stack": "python",
   "project": "takein-sms",
-  "device_labels": ["ADB"],
+  "device_labels": [
+    "ADB"
+  ],
   "cursor_features_enabled": [
     "rules",
     "commands",
@@ -14,7 +16,9 @@
     "permissions",
     "parallel_scope",
     "build_automation",
+    "feature_radar",
     "plugin_pack",
+    "cli_example",
     "mcp_foss_example"
   ],
   "cursor_features_hidden": [
@@ -24,5 +28,6 @@
     "approval_agents",
     "mcp_commercial_example",
     "android_commercial_patterns"
-  ]
+  ],
+  "cursor_features_synced_at": "2026-07-29T04:08:55+00:00"
 }

@@ -1,5 +1,13 @@
 # Decision Log — TakeIn SMS
 
+## 2026-07-29 — /audit remediation
+
+**Context:** Full `/audit` against child TakeIn SMS repo after bootstrap alignment.
+
+**Actions:** Restored missing hygiene/example stubs; fixed changelog Unreleased heading; added release-please version manifest (no workflow); made pytest workflow check accept root `pyproject.toml`; pinned runtime deps; documented packaging; slimmed `TEMPLATE_INDEX.json` then re-indexed scripts/workflows; achieved green `validate-bootstrap --quick`, hygiene, feature-gate (python), watch-agent-gates.
+
+**Deferred to HUMAN:** Dependabot alerts UI, CodeQL/Scorecard, branch protection, actions Dependabot PR review.
+
 ## 2026-07-29 — Bootstrap alignment high-risk defaults
 
 **Context:** Align live TakeIn SMS repo with `agent-project-bootstrap` v0.15.1. Human asked agent to choose the most logical and ethical answers to Phase 0 confirmation questions.

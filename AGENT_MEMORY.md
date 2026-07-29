@@ -15,8 +15,9 @@
 
 ## Active focus
 
-- Bootstrap alignment Sequential mostly done; remaining `[HUMAN]` GitHub Dependabot alerts UI toggle if API did not fully enable
+- `/audit` 2026-07-29 complete: `validate-bootstrap --quick` green; open board is HUMAN/ADB only
 - Keep product code stable; no live SMS imports unless requested
+- Human: Dependabot alerts UI + review actions bump PR
 
 ## Do not re-litigate
 
