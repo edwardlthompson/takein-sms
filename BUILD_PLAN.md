@@ -27,7 +27,7 @@
 4. ✅ `[AGENT]` `pyproject.toml` + ruff; keep `requirements.txt` for PyInstaller
 5. ✅ `[AGENT]` Lean GitHub Actions CI + Dependabot (pip + github-actions)
 6. ✅ `[AGENT]` Security docs adapted for ADB/SMS; expand `.gitignore`
-7. 🔲 `[AGENT]` `git init` + push public `takein-sms` remote
+7. ✅ `[AGENT]` `git init` + push public `takein-sms` remote
 8. ✅ `[AUTO]` pytest smoke + ruff on app modules (local)
 9. 🔲 `[HUMAN]` Enable Dependabot alerts + private vulnerability reporting on GitHub
 
