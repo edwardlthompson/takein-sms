@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Python lint & tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff pytest
+          pip install -r requirements.txt
+
+      - name: Ruff check
+        run: ruff check adb_util.py convert_gvoice.py gui_app.py import_gvoice_adb.py pipeline.py tests
+
+      - name: Ruff format check
+        run: ruff format --check adb_util.py convert_gvoice.py gui_app.py import_gvoice_adb.py pipeline.py tests
+
+      - name: Pytest
+        run: pytest -q
+
+      - name: File encoding (UTF-8)
+        run: |
+          if [ -f scripts/check-file-encoding.sh ]; then
+            bash scripts/check-file-encoding.sh || true
+          fi
+
+  hygiene:
+    name: Repo hygiene hints
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ensure no sensitive artifacts tracked
+        run: |
+          set -euo pipefail
+          banned='gvoice_sms.xml|gvoice_import.sql|mmssms\.db|Takeout/'
+          if git ls-files | grep -E "$banned"; then
+            echo "Sensitive or Takeout paths must not be tracked" >&2
+            exit 1
+          fi

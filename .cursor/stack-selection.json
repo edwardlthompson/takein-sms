@@ -1,0 +1,28 @@
+{
+  "distribution_tier": "foss",
+  "stack": "python",
+  "project": "takein-sms",
+  "device_labels": ["ADB"],
+  "cursor_features_enabled": [
+    "rules",
+    "commands",
+    "hooks",
+    "skills",
+    "subagents",
+    "modes",
+    "worktrees",
+    "permissions",
+    "parallel_scope",
+    "build_automation",
+    "plugin_pack",
+    "mcp_foss_example"
+  ],
+  "cursor_features_hidden": [
+    "cloud_agents",
+    "bugbot",
+    "automations",
+    "approval_agents",
+    "mcp_commercial_example",
+    "android_commercial_patterns"
+  ]
+}

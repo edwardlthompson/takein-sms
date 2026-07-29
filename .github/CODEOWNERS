@@ -1,0 +1,7 @@
+# Default owners — adjust after GitHub remote exists
+* @edwardlthompson
+
+/.github/ @edwardlthompson
+/SECURITY.md @edwardlthompson
+/scripts/ @edwardlthompson
+/.cursor/rules/ @edwardlthompson

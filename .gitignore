@@ -1,0 +1,52 @@
+# Dependencies / envs
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.uv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+.coverage
+htmlcov/
+coverage/
+*.spec.bak
+
+# TakeIn SMS generated / sensitive
+output/
+backups/
+gvoice_import.sql
+gvoice_sms.xml
+vendor/platform-tools/
+*.log
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+*.swp
+.cursor-session-state
+.cursor/agent-progress.json
+.cursor/parallel-scope-lock.json
+.cursor/worktrees/
+.cursor/mcp.json
+.cursor/mcp-audit.log
+.cursor/environment.json
+.cursor/sandbox.json
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Temp
+*.tmp
+*.bak
