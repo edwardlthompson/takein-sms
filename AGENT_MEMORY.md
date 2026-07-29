@@ -15,8 +15,8 @@
 
 ## Active focus
 
-- Finish bootstrap alignment Sequential lane in `BUILD_PLAN.md`
-- Keep product code stable while adding agent/CI surface
+- Bootstrap alignment Sequential mostly done; remaining `[HUMAN]` GitHub Dependabot alerts UI toggle if API did not fully enable
+- Keep product code stable; no live SMS imports unless requested
 
 ## Do not re-litigate
 
