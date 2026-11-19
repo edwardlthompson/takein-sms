@@ -53,6 +53,15 @@ Standing queue for Cursor Cloud. Rows: `🔲 [AGENT][CLOUD] … — scope: path`
 _No cloud agent items._
 <!-- cloud-agent-lane:end -->
 
+## Child Repo Playbook
+
+### Sprint News — News Bot follow-ups
+
+<!-- parallel_exception: independent news follow-ups; run sequentially -->
+
+_No open news tasks._
+
+
 ## Archive
 
 Older sprints: [`COMPLETED_TASKS.md`](COMPLETED_TASKS.md).
