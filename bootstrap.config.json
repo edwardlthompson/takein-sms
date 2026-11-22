@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "project_name": "takein-sms",
+  "purpose": "TakeIn SMS \u2014 Google Voice Takeout to Android SMS (Windows GUI + ADB)",
+  "stack": "python",
+  "license": "MIT",
+  "distribution_tier": "foss",
+  "parent_template": "edwardlthompson/agent-project-bootstrap",
+  "parent_version": "1.13.1",
+  "agent_adapters": {
+    "cursor_rules": true,
+    "claude": true,
+    "copilot": true,
+    "gemini": true,
+    "cline": true
+  },
+  "security": {
+    "dependabot": true,
+    "code_scanning": true,
+    "secret_detection": true
+  }
+}
