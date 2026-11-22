@@ -69,3 +69,10 @@ Output: `dist\TakeInSMS\TakeInSMS.exe` (one-folder build with bundled `adb`).
 MIT — see [`LICENSE`](LICENSE).
 
 Always keep a backup of your phone’s SMS database before importing. Use at your own risk for device-side changes.
+
+## What this is not
+
+- A finished commercial product promise
+- A place for secrets or production credentials
+- An unbounded scope — see README goals above
+
